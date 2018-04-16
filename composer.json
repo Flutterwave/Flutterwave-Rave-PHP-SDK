@@ -1,19 +1,34 @@
 {
-    "name": "flutterwave/rave",
-    "description": "A simple SDK for integrating to Flutterwave's Rave payment gateway",
+    "name": "gladcodes/ravephp",
+    "description": "Simple PHP SDK for integrating Flutterwave's Rave payment gateway.",
+    "keywords": ["rave", "flutterwave", "payment"],
     "type": "library",
+    "homepage": "https://github.com/gladchinda/rave-php",
+    "readme": "./blob/master/README.md",
     "require": {
+        "php": ">=5.4.0",
         "monolog/monolog": "1.*",
-        "mashape/unirest-php": "^3.0"
-    },
-    "require-dev": {
-
+        "mashape/unirest-php": "^3.0",
+        "vlucas/phpdotenv": "^2.4"
     },
     "license": "MIT",
     "authors": [
         {
+            "name": "Glad Chinda",
+            "email": "gladxeqs@gmail.com"
+        },
+        {
             "name": "Olanipekun Femi",
             "email": "iolufemi@ymail.com"
         }
-    ]
+    ],
+    "support": {
+        "email": "gladxeqs@gmail.com",
+        "issues": "https://github.com/gladchinda/rave-php/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rave\\": "src/Rave"
+        }
+    }
 }
